@@ -1,0 +1,324 @@
+{% extends 'base.html' %} {% block lang %}lang='en'{% endblock %} 
+{% block title
+%}My Portfolio{% endblock %} 
+{% block lang_btn %}
+<div class="language-menu">
+  <input id="language-check" type="checkbox">
+  <div class="language-button">
+    <label for="language-check">
+      <img src="{{ url_for('static', filename='Images/english-flag.png') }}">
+      <h6><span>&#8644</span> EN</h6>
+      <a href="{{ url_for('it_views.italian_home') }}">Click for IT</a>
+    </label>
+  </div>
+</div>
+{% endblock %}
+{% block nav_links %}
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About me</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+{% endblock %}
+{% block body %}
+<section id="home">
+  <div class="home-text">
+    <h4>Hi, There!</h4>
+    <h1>
+      Hello, I'm Gabriele <br />
+      <span>Certo</span>
+    </h1>
+    <hr />
+    <p>I create solutions that tell stories and inspire emotions</p>
+
+    <div class="home-social">
+      <a href="https://github.com/ThatGabrieleC"><i class='bx bxl-github'></i></box-icon></a>
+      <a href="#"><i class='bx bxs-envelope'></i></a>
+      <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+    </div>
+  </div>
+  <div class="home-img">
+    <img src="{{ url_for('static', filename='Images/foto-cv alta.png') }}" alt="profile pic"/>
+  </div>
+</section>
+
+<!-- About section -->
+<section id="about">
+  <div class="main-about">
+   <div class="phrase-container">
+    <img src="{{ url_for('static', filename='Images/feynman.jpg') }}">
+    <h5><span>“</span>Study hard what interests you the most in the most undisciplined,
+      irreverent and original manner possible<span>”</span></h5>
+    <p>Richard Phillips Feynman</p>
+   </div>
+   <div class="about-text">
+    <h2>About Me</h2>
+    <p>I'm a young professional with a strong passion for learning and a drive to grow
+      within the dynamic world of global collaboration. As I continue to develop my skills,
+      I aim to work with clients from diverse backgrounds, tackling new challenges and honing my
+      ability to meet a variety of needs.</p>
+      <hr>
+    <p>My goal is to explore and understand the richness of
+      different cultures, languages, and perspectives, while combining cultural learning with creativity
+      to offer solutions that are both practical and engaging. I'm excited to venture into unexplored
+      fields and services - areas that haven't yet been ideated or realized - while pushing the boundaries of what'
+      possible and contributing to innovation in the process.
+    </p>
+    <a href="#" class="about-btn">Hire Me</a>
+   </div>   
+  </div>
+</section>
+
+<hr class="about-hr">
+
+<div class="specialties">
+  <h4>Specialties</h4>
+  <div class="specialties-container">
+    <div class="specialty">
+      <div class="specialty-i">
+        <i class="bx bxs-bulb"></i>
+      </div>
+      <h5>CREATIVITY:</h5>
+      <p>I relentlessly generate groundbreaking ideas with unmatched originality, transmuting
+        abstract concepts into bold, tangible and transformative projects that make a lasting impact.
+      </p>
+    </div>
+    <div class="specialty">
+      <div class="specialty-i">
+        <i class="fa-solid fa-brain"></i>
+        <div class="question-icon">
+          <i class="fa-solid fa-question"></i>
+        </div>
+      </div>
+      <h5>CURIOSITY:</h5>
+      <p>I am deeply eager to learn new things and refine what I already know,
+        because what we understand now is nothing compared to what we have the potential to learn.
+      </p>
+    </div>
+    <div class="specialty">
+      <div class="specialty-i">
+        <i class='bx bxs-heart'></i>
+      </div>
+      <h5>PASSION:</h5>
+      <p>I love this field and its related aspects. The more experienced I'll become, the better
+        work I'll produce, and the more I'll be able to enhance people's lives through my passion for programming.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="languages">
+  <h4>Languages</h4>
+  <div class="lang-container">
+    <div class="lang-item programming">
+      <div class="lang program">
+        <div class="lang-i python" favorite-lang="My favorite">
+          <i class='bx bxl-python'></i>
+        </div>
+        <p>Python</p>
+      </div>
+      <hr>
+      <div class="lang program">
+        <div class="lang-i">
+          <i class='fa-solid fa-database' style="font-size: 1.1rem;"></i>
+        </div>
+        <p>SQL</p>
+      </div>
+      <hr>
+      <div class="lang program">
+        <div class="lang-i">
+          <i class='bx bxl-flask'></i>
+        </div>
+        <p>Flask</p>
+      </div>
+      <hr>
+      <div class="lang program">
+        <div class="lang-i">
+          <i class='bx bxl-html5'></i>
+        </div>
+        <p>HTML</p>
+      </div>
+      <hr>
+      <div class="lang program">
+        <div class="lang-i">
+          <i class='bx bxl-css3'></i>
+        </div>
+        <p>CSS</p>
+      </div>
+    </div>
+
+    <div class="lang-item speaking">
+      <div class="lang spoken">
+        <h5>ITALIAN</h5>
+        <p>Mother Tongue</p>
+      </div>
+      <div class="lang spoken">
+        <h5>ENGLISH</h5>
+        <p>B2, Cambridge First</p>
+        <span>want to enhance</span>
+      </div>
+      <div class="lang spoken">
+        <h5>SPANISH</h5>
+        <p>Intermediate</p>
+      </div>
+      <div class="lang spoken">
+        <h5>FRENCH</h5>
+        <p>Basic</p>
+      </div>
+      <div class="lang spoken">
+        <h5>LATIN</h5>
+        <span>want to learn</span>
+      </div>
+    </div>
+  </div>
+</section>  
+
+<!-- Projects section -->
+<section id="projects">
+  <div class="proj-head">
+    <h4>Projects</h4>
+    <h2>Done and <span>Coming</span></h2>
+    <hr/>
+    <p>Where deep ideas spark, creativity thrives and each project unfolds
+     a world of discovery.</p>
+  </div>
+
+  <div class="proj-container">
+    <div class="proj-item">
+      <div class="proj-img" title="5 card Poker">
+        <img src="{{ url_for('static', filename='Images/poker.png') }}" alt="project img">
+      </div>
+      <p>A Python-based 5-card poker game played in the terminal, perfect for consolidating
+         programming fundamentals. This project offers a solid structure for building card 
+         games and simulating poker hands, with random card dealing and hand evaluation to 
+         test your coding skills.</p>
+      <div class="proj-details">
+        <a class="proj-link" href="https://github.com/ThatGabrieleC/5-card-Poker">
+          <i class='bx bx-link'></i>
+          <h5>Project link</h5>
+        </a>
+        <div class="proj-stats">
+          <div class="proj-stat">
+            <i class='bx bx-star'></i>
+            <h5>3</h5>
+          </div>
+          <div class="proj-stat">
+            <i class='bx bx-git-repo-forked'></i>
+            <h5>1</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-img" title="Cereal site">
+        <img src="{{ url_for('static', filename='Images/wrench and hammer giusto.png') }}" alt="project img">
+      </div>
+      <p>Welcome to an exciting, user-friendly cereal platform where you can craft your
+        own custom cereals and explore new flavor combinations... Dive into a world of 
+        endless possibilities and discover what makes this project unique. Plus, with 
+        personalized accounts, your experience is tailored just for you.
+      </p>
+      <div class="proj-details">
+        <a class="proj-link">
+          <i class='bx bx-paint'></i>
+          <h5>Working in progress</h5>
+        </a>
+        <div class="proj-stats">
+          <div class="proj-stat">
+            <i class='bx bx-star'></i>
+            <h5>-</h5>
+          </div>
+          <div class="proj-stat">
+            <i class='bx bx-git-repo-forked'></i>
+            <h5>-</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-img" title="Limitless Horizons">
+        <img src="{{ url_for('static', filename='Images/limitless horizons1.png') }}" alt="project img">
+      </div>
+      <p>The possibilities are endless. This is just the start—where ideas evolve, 
+        projects grow, and creativity knows no bounds.</p>
+      <div class="proj-details">
+        <a class="proj-link">
+          <i class='bx bx-time-five'></i>
+          <h5>Coming soon</h5>
+        </a>
+        <div class="proj-stats">
+          <div class="proj-stat">
+            <i class='bx bx-star'></i>
+            <h5>-</h5>
+          </div>
+          <div class="proj-stat">
+            <i class='bx bx-git-repo-forked'></i>
+            <h5>-</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact section -->
+ <section id="contact">
+  <!-- <h4>Contact</h4> -->
+  <div class="contact-container">
+    <div class="contact-text">
+      <h4>Let's get in touch</h4>
+      <h5>and create something</h5>
+      <h3>BIG</h3>
+      <hr/>
+      <a class="contact-email" data-status="Click to copy" data-print="Click to copy">
+        <i class="bx bxs-envelope"></i>
+        <p class="copy-email" id="copyEmail" data-text="G.Certo@proton.me">G.Certo@proton.me</p>
+        <i class='bx bxs-copy'></i>
+      </a>
+    </div>
+    <form class="contact-form" action="{{ url_for('en_views.contact_form') }}" method="post">
+      <p><span>No</span> spam/sharing, I hate those things</p>
+      <div class="input-box">
+        <input type="text" name="name" required>
+        <label for="name">Name</label>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="input-box">
+        <textarea name="message" required></textarea>
+        <label for="text">Message</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+ </section>
+ <footer>
+    <h5><i class='bx bx-copyright'></i>Gabriele Certo </h5>
+    <h5>-</h5>
+    <h5>MMXXIV</h5>
+ </footer>
+
+ <script>
+  function copyToClipboard() {
+    const copyElement = document.getElementById('copyEmail');
+    const copyEmail = copyElement.getAttribute('data-text');
+    const changeStatus = document.querySelector('.contact-email');
+
+    // use the clipboard api to write the text
+    navigator.clipboard.writeText(copyEmail).then(() => {
+      changeStatus.setAttribute('data-status', 'Copied!');
+      setTimeout(() => {
+        changeStatus.setAttribute('data-status', 'Click to copy');
+      }, 2000);
+    }).catch((err) => {
+      console.error('Error copying text', err);
+    });
+  }
+
+  document.getElementById('copyEmail').addEventListener('click', copyToClipboard); 
+ </script>
+{% endblock %}

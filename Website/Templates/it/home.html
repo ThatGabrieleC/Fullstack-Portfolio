@@ -1,0 +1,327 @@
+{% extends 'base.html' %}
+{% block lang %}lang='it'{% endblock %}
+{% block title %}Il mio portafoglio{% endblock %}
+{% block lang_btn %}
+<div class="language-menu">
+  <input id="language-check" type="checkbox">
+  <div class="language-button">
+    <label for="language-check">
+      <img src="{{ url_for('static', filename='Images/italian-flag.png') }}">
+      <h6><span>&#8644</span> IT</h6>
+      <a href="{{ url_for('en_views.english_home') }}">Click for EN</a>
+    </label>
+  </div>
+</div>
+{% endblock %}
+{% block nav_links %}
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About Me</a></li>
+<li><a href="#project">Progetti</a></li>
+<li><a href="#contact">Contatti</a></li>
+{% endblock %}
+{% block body %}
+<section id="home">
+  <div class="home-text">
+    <h4>Ehilà!</h4>
+    <h1>
+      Ciao, sono Gabriele <br />
+      <span>Certo</span>
+    </h1>
+    <hr />
+    <p>Creo soluzioni che raccontano storie ed ispirano emozioni</p>
+
+    <div class="home-social">
+      <a href="https://github.com/ThatGabrieleC"><i class='bx bxl-github'></i></box-icon></a>
+      <a href="#"><i class='bx bxs-envelope'></i></a>
+      <a href="#"><i class='bx bxl-linkedin-square'></i></a>
+    </div>
+  </div>
+  <div class="home-img">
+    <img src="{{ url_for('static', filename='Images/foto-cv alta.png') }}" alt="profile pic"/>
+  </div>
+</section>
+
+<!-- About section -->
+<section id="about">
+  <div class="main-about">
+   <div class="phrase-container">
+    <img src="{{ url_for('static', filename='Images/feynman.jpg') }}">
+    <h5><span>“</span>Studia duramente ciò che ti interessa maggiormente nella maniera più
+      indisciplinata, irriverente ed originale possibile<span>”</span></h5>
+    <p>Richard Phillips Feynman</p>
+   </div>
+   <div class="about-text">
+    <h2>About Me</h2>
+    <p>Sono un giovane professionale con una forte passione per l'apprendimento ed una
+      motivazione costante a crescere nel mondo dinamico della collaborazione globale. Con il
+      proseguire dello sviluppo delle mie abilità, miro a lavorare con clienti da ambienti differenti,
+      affrontando nuove sfide ed affinando la mia capacità di soddisfare una varietà di bisogni.</p>
+      <hr>
+    <p>Il mio obiettivo è di esplorare e comprendere la ricchezza di distinte culture, lingue, linguaggi e 
+      prospettive, unendo l'apprendimento culturale con la creatività per offrire soluzioni sia pratiche che
+      coinvolgenti. Sono entusiasta di addentrarmi in campi e servizi inesplorati - aree che non sono state 
+      ancora ideate o realizzate - oltrepassando i confini di ciò che è possibile e contribuendo all'innovazione nel processo.
+    </p>
+    <a href="#" class="about-btn">Assumimi</a>
+   </div>   
+  </div>
+</section>
+
+<hr class="about-hr">
+
+<div class="specialties">
+  <h4>Specialità</h4>
+  <div class="specialties-container">
+    <div class="specialty">
+      <div class="specialty-i">
+        <i class="bx bxs-bulb"></i>
+      </div>
+      <h5>CREATIVITÀ:</h5>
+      <p>Genero costantemente idee rivoluzionarie, caratterizzate da un'originalità ineguagliabile,
+        transmutando concetti astratti in progetti concreti e capaci di trasformare con un 
+        impatto duraturo.
+      </p>
+    </div>
+    <div class="specialty">
+      <div class="specialty-i">
+        <i class="fa-solid fa-brain"></i>
+        <div class="question-icon">
+          <i class="fa-solid fa-question"></i>
+        </div>
+      </div>
+      <h5>CURIOSITÀ:</h5>
+      <p>Sono profondamente desideroso di imparare nuovi concetti ed affinare ciò che già conosco,
+        perchè ciò che sappiamo ora è solo un'ombra di quanto abbiamo il potenziale di comprendere.
+      </p>
+    </div>
+    <div class="specialty">
+      <div class="specialty-i">
+        <i class='bx bxs-heart'></i>
+      </div>
+      <h5>PASSIONE:</h5>
+      <p>Amo questo campo, così come ogni sua sfumatura. Man mano che maturerò
+        esperienza, i miei progetti non saranno solo più raffinati, ma contribuiranno a dare forma 
+        a un impatto concreto nella vita delle persone, alimentato dalla mia passione per la programmazione.
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="languages">
+  <h4>Lingue e linguaggi</h4>
+  <div class="lang-container">
+    <div class="lang-item programming">
+      <div class="lang program">
+        <div class="lang-i python" favorite-lang="Il mio prefereito">
+          <i class='bx bxl-python'></i>
+        </div>
+        <p>Python</p>
+      </div>
+      <hr>
+      <div class="lang program">
+        <div class="lang-i">
+          <i class='fa-solid fa-database' style="font-size: 1.1rem;"></i>
+        </div>
+        <p>SQL</p>
+      </div>
+      <hr>
+      <div class="lang program">
+        <div class="lang-i">
+          <i class='bx bxl-flask'></i>
+        </div>
+        <p>Flask</p>
+      </div>
+      <hr>
+      <div class="lang program">
+        <div class="lang-i">
+          <i class='bx bxl-html5'></i>
+        </div>
+        <p>HTML</p>
+      </div>
+      <hr>
+      <div class="lang program">
+        <div class="lang-i">
+          <i class='bx bxl-css3'></i>
+        </div>
+        <p>CSS</p>
+      </div>
+    </div>
+
+    <div class="lang-item speaking">
+      <div class="lang spoken">
+        <h5>ITALIANO</h5>
+        <p>Madrelingua</p>
+      </div>
+      <div class="lang spoken">
+        <h5>INGLESE</h5>
+        <p>B2, Cambridge First</p>
+        <span>volontà di affinarlo</span>
+      </div>
+      <div class="lang spoken">
+        <h5>SPAGNOLO</h5>
+        <p>Intermedio</p>
+      </div>
+      <div class="lang spoken">
+        <h5>FRANCESE</h5>
+        <p>Base</p>
+      </div>
+      <div class="lang spoken">
+        <h5>LATINO</h5>
+        <span>volontà di impararlo</span>
+      </div>
+    </div>
+  </div>
+</section>  
+
+<!-- Projects section -->
+<section id="projects">
+  <div class="proj-head">
+    <h4>Progetti</h4>
+    <h2>Completati ed in <span>Arrivo</span></h2>
+    <hr/>
+    <p>Ove idee profonde prendono vita, la creatività prospera ed ogni progetto rivela
+      un mondo di scoperte.</p>
+  </div>
+
+  <div class="proj-container">
+    <div class="proj-item">
+      <div class="proj-img" title="5 card Poker">
+        <img src="{{ url_for('static', filename='Images/poker.png') }}" alt="img progetto">
+      </div>
+      <p>Un gioco di poker a 5 carte giocato nel terminale di Python, perfetto per consolidare 
+        le fondamenta della programmazione. Questo progetto offre una solida struttura per costruire
+        giochi di carte e simulare mani, con distribuzione casuale di carte e valutazione delle
+        combinazioni per testare le tue abilità di coding.</p>
+      <div class="proj-details">
+        <a class="proj-link" href="https://github.com/ThatGabrieleC/5-card-Poker">
+          <i class='bx bx-link'></i>
+          <h5>Link del progetto</h5>
+        </a>
+        <div class="proj-stats">
+          <div class="proj-stat">
+            <i class='bx bx-star'></i>
+            <h5>3</h5>
+          </div>
+          <div class="proj-stat">
+            <i class='bx bx-git-repo-forked'></i>
+            <h5>1</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-img" title="Cere-brale">
+        <img src="{{ url_for('static', filename='Images/wrench and hammer giusto.png') }}" alt="img progetto">
+      </div>
+      <p>Benvenuto ad un entusiasmante, piattaforma per i cereali intuitiva, dove puoi progettare i
+        tuoi cereali personalizzati ed esplorare nuove combinazioni di gusti... Immergiti in un mondo di 
+        infinite possibilità e scopri cosa rende unico questo progetto. Inoltre, con account 
+        personalizzati, l'esperienza è realizzata su misura solo per te.
+      </p>
+      <div class="proj-details">
+        <a class="proj-link">
+          <i class='bx bx-paint'></i>
+          <h5>Attualmente in sviluppo</h5>
+        </a>
+        <div class="proj-stats">
+          <div class="proj-stat">
+            <i class='bx bx-star'></i>
+            <h5>-</h5>
+          </div>
+          <div class="proj-stat">
+            <i class='bx bx-git-repo-forked'></i>
+            <h5>-</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-img" title="Orizzonte senza confini">
+        <img src="{{ url_for('static', filename='Images/limitless horizons1.png') }}" alt="img progetto">
+      </div>
+      <p>Le possibilità sono infinite. Questo è solo l'inizio—dove le idee si evolvono, 
+        i progetti crescono, e la creatività non conosce limiti.</p>
+      <div class="proj-details">
+        <a class="proj-link">
+          <i class='bx bx-time-five'></i>
+          <h5>Prossimamente</h5>
+        </a>
+        <div class="proj-stats">
+          <div class="proj-stat">
+            <i class='bx bx-star'></i>
+            <h5>-</h5>
+          </div>
+          <div class="proj-stat">
+            <i class='bx bx-git-repo-forked'></i>
+            <h5>-</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Contact section -->
+ <section id="contact">
+  <!-- <h4>Contact</h4> -->
+  <div class="contact-container">
+    <div class="contact-text">
+      <h4>Mettiamoci in contatto</h4>
+      <h5>e creiamo qualcosa di</h5>
+      <h3>GRANDE</h3>
+      <hr/>
+      <a class="contact-email" data-status="Click to copy" data-print="Clicca per copiare">
+        <i class="bx bxs-envelope"></i>
+        <p class="copy-email" id="copyEmail" data-text="G.Certo@proton.me">G.Certo@proton.me</p>
+        <i class='bx bxs-copy'></i>
+      </a>
+    </div>
+    <form class="contact-form" action="{{ url_for('it_views.contact_form') }}" method="post">
+      <p><span>Niente</span> spam/condivisione, odio quelle cose</p>
+      <div class="input-box">
+        <input type="text" name="name" required>
+        <label for="name">Nome</label>
+      </div>
+      <div class="input-box">
+        <input type="email" name="email" required>
+        <label for="email">Email</label>
+      </div>
+      <div class="input-box">
+        <textarea name="message" required></textarea>
+        <label for="text">Messaggio</label>
+      </div>
+      <button type="submit">Invia</button>
+    </form>
+  </div>
+ </section>
+ <footer>
+    <h5><i class='bx bx-copyright'></i>Gabriele Certo </h5>
+    <h5>-</h5>
+    <h5>MMXXIV</h5>
+ </footer>
+
+ <script>
+  function copyToClipboard() {
+    const copyElement = document.getElementById('copyEmail');
+    const copyEmail = copyElement.getAttribute('data-text');
+    const changeStatus = document.querySelector('.contact-email');
+
+    // use the clipboard api to write the text
+    navigator.clipboard.writeText(copyEmail).then(() => {
+      changeStatus.setAttribute('data-status', 'Copied!');
+      changeStatus.setAttribute('data-print', 'Copiata!');
+      setTimeout(() => {
+        changeStatus.setAttribute('data-status', 'Click to copy');
+        changeStatus.setAttribute('data-print', 'Clicca per copiare');
+      }, 2000);
+    }).catch((err) => {
+      console.error('Error copying text', err);
+    });
+  }
+
+  document.getElementById('copyEmail').addEventListener('click', copyToClipboard); 
+ </script>
+{% endblock %}

@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3 span::after {
+    content:'';
+    animation: countdown 3s;
+}
+@keyframes countdown {
+    0% {
+        content:'2'
+    }
+    60% {
+        content: '1';
+    }
+    100% {
+        content: '';
+    }
+}
+
