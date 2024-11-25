@@ -17,7 +17,7 @@ def contact_form():
 
         msg = Message(
             subject="Someone wants to HIRE MEEE",
-            recipients=["elgabbuz@gmail.com"],
+            recipients=["G.Certo@proton.me"],
             body=f"{name} got interested by my portfolio, his infos: \nName: {name},\nEmail: {email},\nMessage: {message} ",
             sender=current_app.config['MAIL_USERNAME']
         )
