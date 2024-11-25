@@ -5,13 +5,6 @@ import os
 
 load_dotenv()
 
-# mail_username = os.getenv('MAIL_USERNAME')
-# mail_password = os.getenv('MAIL_PASSWORD')
-# mail_sender = os.getenv('MAIL_DEFAULT_SENDER')
-# print(f"MAIL_USERNAME: {mail_username}")
-# print(f"MAIL_PASSWORD: {mail_password}")
-# print(f"MAIL_DEFAULT_SENDER: {mail_sender}")
-
 def create_app():
     load_dotenv()
 
