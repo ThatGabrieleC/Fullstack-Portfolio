@@ -16,7 +16,7 @@ def contact_form():
 
         msg = Message(
             subject="Qualcuno vuole ASSUMERMIIIII",
-            recipients=["elgabbuz@gmail.com"],
+            recipients=["G.Certo@proton.me"],
             body=f"{name} è stato catturato dal mio portafoglio, his infos:\nName: {name},\nEmail: {email},\n Message: {message}",
             sender=current_app.config['MAIL_USERNAME']
         )
